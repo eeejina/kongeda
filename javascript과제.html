@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        input[type=radio]{
+            display: none;
+        }
+        div{
+            width: 0;
+            height: 0;
+            border-left: 10px solid black;
+            border-right: none;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            margin: 100px auto 20px;
+        }
+        ul{
+           margin: 0 auto;
+           list-style: none;
+           width: 200px;
+        }
+        ul li{
+           float: left;
+           width: 100px;
+           text-align: center;
+        }
+        label{
+            display: block;
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 50px;
+        }
+        #start:checked ~ div{
+            animation: move 0.5s linear infinite alternate;
+        }
+        #start:checked ~ ul li:first-child label,
+        #stop:checked ~ ul li:last-child label{
+            background-color: black;
+            color: white;
+        }
+      @keyframes move{
+        from{transform: translateX(-5px);}
+        to{transform: translateX(5px);}
+      }
+      @keyframes move_up{
+        from{transform: translateY(-5px);}
+        to{transform: translateY(5px);}
+      }
+      #stop:checked ~ section div{
+        animation-play-state: paused;
+      }
+    </style>
+</head>
+<body>
+    <input type="radio" name="btn" id="start" checked>
+    <input type="radio" name="btn" id="stop">
+    <setion>
+        <div></div>
+        <div></div>
+    </setion>
+    <ul>
+        <li><label for="start">start</label></li>
+        <li><label for="stop">stop</label></li>
+    </ul>
+</body>
+</html>

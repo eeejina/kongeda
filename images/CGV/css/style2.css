@@ -1,0 +1,93 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #333
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: Arial, "맑은 고딕", sans-serif;
+}
+.top{
+    width: 100%;
+    background: red;
+}
+.top_menu{
+    width: 1025px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.top_menu ul{
+    float: right;
+} 
+.top_menu ul li{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.top_menu ul li a{
+    color: white;
+}
+.main_menu{
+    width: 1025px;
+    height: 80px;
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    line-height: 80px;
+}
+.logo img{
+    vertical-align: middle;
+}
+.menu ul{
+    float: right;
+}
+.menu ul li{
+    float: left;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.menu ul li a{
+    color: red;
+    font-weight: bold;
+}
+.visual{
+    width: 1025px;
+    height: 312px;
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.con{
+    width: 1025px;
+    margin: 0 auto;
+}
+.con li{
+    float: left;
+    width: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner{
+    width: 1025px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.banner > div{
+    float: left;
+    width: 49%;
+}
+.event{
+    margin-right: 2%;
+}
+.event  h2{
+    float: left;
+    margin: 40px;
+}

@@ -1,0 +1,20 @@
+header nav {
+  width: 800px;
+  border: 1px solid #f00;
+}
+header nav ul#menu {
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+  list-style: none;
+  background: yellow;
+}
+header nav ul#menu li {
+  width: 25%;
+}
+header nav ul#menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

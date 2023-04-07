@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            background: #ddd;
+            display: grid;
+            grid-template-rows: 100px 300px 200px 100px;
+            grid-template-columns: 200px auto;
+        }
+        .grid-item{
+            background: #ccc;
+            border: 1px solid #000;
+        }
+        .grid-item:first-child{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .grid-item:nth-child(2){
+            grid-column-start: 2;
+            grid-column-end: 6;
+        }
+        .grid-item:nth-child(3){
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .grid-item:nth-child(4){
+            grid-column-start: 1;
+            grid-column-end: 3; 
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        .grid-item:nth-child(5){
+             grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        .grid-item:nth-child(6){
+             grid-column-start: 5;
+            grid-column-end: 6; 
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        .grid-item:nth-child(7){
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .grid-item:nth-child(8){
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .grid-item:nth-child(9){
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">logo</div>
+        <div class="grid-item">menu</div>
+        <div class="grid-item">이미지 슬라이드</div>
+        <div class="grid-item">공지사항/갤러리</div>
+        <div class="grid-item">배너</div>
+        <div class="grid-item">바로가기</div>
+        <div class="grid-item">logo</div>
+        <div class="grid-item">copyright</div>
+        <div class="grid-item">sns</div>
+    </div>
+    <section>
+        <div></div>
+    </section>
+</body>
+</html>

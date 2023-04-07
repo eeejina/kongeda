@@ -1,0 +1,105 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    #333
+}
+body{
+    font-family: Arial, "맑은 고딕", sans-serif;
+}
+h1{
+    width: 1001px;
+    margin: 0 auto;
+    color: gray;
+    
+}
+.menu{
+    height: 360px;
+    background-image: url(../images/bg2.gif);
+}
+.menu ul{
+    width: 1001px;
+    margin: 0 auto;
+    height: 360px;
+    background: url(img/bg_main.png);
+}
+.menu ul li{
+   float: left;
+}
+.menu ul li a{
+    display: block;
+    color: white;
+    line-height: 70px;
+    padding: 0 20px;
+}
+.menu ul li:first-child{
+    background: red;
+}
+.menu ul li:hover{
+    background: red;
+}
+section{
+    position: relative;
+    width: 1001px;
+}
+h1, h2, p{
+    color: gray;
+}
+.con{
+    position: relative;;
+}
+.left{
+    position: absolute;
+    left: 460px;
+    top: 20px;
+    display: inline-block;
+    width: 60%;
+}
+p{
+    padding: 10px 0 0 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.btn{
+    position: absolute;
+    right: -80px;
+    top: 210px;
+    box-shadow: 0 0 3px #aaa;
+}
+.right{
+    position: absolute;
+    left: 1200px;
+    top: 20px;
+}
+.right ul li, h1{
+    margin-top: 5px;
+}
+.right ul li a{
+    font-weight: bold;
+    color: rgb(26, 26, 187);
+}
+.con2{
+    position: relative;
+}
+.left2{
+    position: absolute;
+    left: 460px;
+    top: 300px;
+}
+.btn2{
+    position: absolute;
+    right: -80px;
+    top: 420px;
+    box-shadow: 0 0 3px #aaa;
+
+}
+
+
+
+

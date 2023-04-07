@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.parent{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        div.parent>div{
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        div:first-child{
+            width: 1000px;
+            height: 50px;
+        }
+        div:nth-child(2){
+            width: 100px;
+            height: 500px;
+            margin-top: 10px;
+            margin-right: 10px;
+            float: left;
+        }
+        div:nth-child(3){
+            width: 870px;
+            height: 500px;
+            margin-top: 10px;
+            margin-right: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            float: left;
+
+        }
+        div:last-child{
+            width: 1000px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+       <div><p>head</p></div>
+       <div>
+           <div><p>nav</p></div>
+           <div><p>section</p></div>
+       </div>
+       <div><p>footer</p></div>
+    </div>
+</body>
+</html>

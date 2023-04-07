@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div.parent{
+        width: 80%;
+        background: gray;
+        margin: 0 auto;
+    }
+      div.parent>div{
+        font-size: 0;
+    }
+     div.child{
+        width: 25%;
+        text-align: left;
+        display: inline-block;
+        font-size: 16px;
+     }
+     div.child:first-child{
+        background: red;
+     }
+    div.child:nth-child(2) {
+        background: #0f0;
+    }
+    div.child:nth-child(3) {
+        background: #00f;
+    }
+    div.child:last-child {
+        background: #ff0;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">부모
+        <div>
+            <div class="child">자식1</div>
+            <div class="child">자식2</div>
+            <div class="child">자식3</div>
+            <div class="child">자식4</div>
+        </div>
+      </div>
+</body>
+</html>

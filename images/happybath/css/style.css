@@ -1,0 +1,354 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body{
+    font-family: Arial, "맑은 고딕", sans-serif;
+}
+header{
+    background: #633d70;
+    padding-bottom: 100px;
+}
+.top{
+    width: 1000px;
+    margin: 0 auto;
+}
+.top nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.top ul.top_menu{
+    width: 320px;
+    height: 30px;
+    display: flex;
+    background: #fff;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.top ul.top_menu li a::after{
+    content: "|";
+    padding: 0 10px;
+}
+.top ul.top_menu li:last-child a::after{
+    content: "";
+    padding: 0;
+}
+.top .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+.top .gnb{
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gnb li a{
+    color: #fff;
+    font-weight: bold;
+}
+.visual{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    top: -60px;
+}
+.con{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.con h2{
+    text-align: center;
+    padding: 10px 0;
+}
+.left{
+    width: 48%;
+    float: left;
+    /* overflow: hidden; */
+}
+.left ul li{
+    position: relative;
+    float: left;
+    width: 33.333%;
+    height: 330px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.first{
+    background: url(../images/img1.jpg);
+}
+.second{
+    background: url(../images/img2.jpg);
+}
+.third{
+    background: url(../images/img3.jpg);
+}
+.title{
+    text-align: center;
+    line-height: 330px;
+    color: white;
+    text-shadow: 2px 2px #333;
+    font-size: 20px;
+}
+.box{
+    position: absolute;
+    width: 300px;
+    left: 0;
+    top: 0;
+    padding-top: 120px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+}
+.left ul:hover .title{
+    display: none;
+}
+.left ul li:hover{
+    width: 60%;
+}
+.left ul:hover li:not(:hover){
+    width: 20%;
+}
+.left ul li:hover .box{
+    opacity: 1;
+}
+.right{
+    width: 45%;
+    float: right;
+    margin-left: 20px;
+}
+.beauty{
+    width: 485px;
+    height: 330px;
+    background: url(../images/woman.jpg);
+    background-position: center;
+    background-size: 100%;
+    transition: 0.5s;
+}
+.beauty:hover{
+    width: 485px;
+    height: 330px;
+    background: url(../images/woman_over.png);
+    background-size: 120%;
+  
+}
+.beauty .desc{
+    width: 100%;
+    text-align: left;
+    padding: 50px 30px;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+}
+.beauty .desc .more{
+    color: #333;
+    border: 1px solid #333;
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-top: 50px;
+}
+.left .more{
+    display: inline-block;
+    color: #fff;
+    border: 1px solid white;
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-top: 50px;
+    
+}
+.left .more:hover{
+    color: #333;
+    background: white;
+    opacity: 0.5;
+}
+.product{
+    clear: both;
+    width: 1000px;
+    margin: 0 auto;
+}
+.product h2{
+    text-align: center;
+    margin: 20px 0;
+}
+.product ul{
+    display: flex;
+    justify-content: space-between;
+}
+.product ul li{
+    position: relative;
+}
+.product ul li::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #633d70;
+    opacity: 0.8;
+    display: none;
+    text-align: center;
+    line-height: 400px;
+}
+.product ul li:hover::after{
+    display: block;
+}
+.product .desc{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*수직정렬*/
+    align-items: center;/*수평정렬*/
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.product .desc p{
+    text-align: center;
+}
+
+.product ul li:hover .desc{
+    opacity: 1;
+    cursor: pointer;
+}
+.product .desc .more{
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.product .desc .more:hover{
+    background: rgba(255, 255, 255, 0.8);
+    color: #633d70;
+}
+.product2{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.product2 h2{
+    text-align: center;
+}
+.Reviw{
+    width: 50%;
+}
+.reviw{
+    display: flex;
+    justify-content: flex-start;
+    width: 450px;
+    height: 230px;
+    background: #ccc;
+    border: 1px solid #ccc;
+    color: #333;
+}
+.reviw img{
+    width: 100px;
+    height: 190px;
+    background: #fff;
+    padding: 20px;
+}
+.re{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.re div p{
+    margin: 10px;
+}
+.re div h4{
+    margin:20px 0 0 20px;
+}
+.re .more{
+    position: relative;
+    top: -50px;
+    margin: 0 auto;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+}
+.Event{
+    width: 50%;
+}
+.a{
+    display: flex;
+    justify-content: space-between;
+}
+.event1{
+    width: 230px;
+    height: 140px;
+    background: rgb(242, 242, 193);
+    background-image: url(../images/event_img.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.event2{  
+    width: 230px;
+    height: 140px;
+    background: rgb(232, 164, 118);
+    background-image: url(../images/item5.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30%;
+}
+.event1 h4, p{
+    padding: 10px 20px;
+}
+.event2 h4, p{
+    padding: 10px ;
+}
+footer{
+    width: 100%;
+    background: #ccc;
+}
+.foot{
+    width: 1000px;
+    margin: 0 auto;
+    /* background: #ccc; */
+    display: flex;
+    justify-content: space-between;
+}
+.foot_left ul, p{
+    display: flex;
+}
+.foot_left ul li{
+    margin-top: 10px;
+}
+.foot_left p{
+    font-size: 14px;
+}
+.foot_left ul a::after{
+    content: "|";
+    padding: 0 10px;
+}
+.sns{
+    margin-top: 10px;
+}
+.sns img{
+    padding-left: 20px;
+}
+
+
+

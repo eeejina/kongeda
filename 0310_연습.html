@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            position: relative;
+        }
+        input{
+            display: none;
+        }
+        ul{
+            list-style: none;
+        }
+        .btn li{
+            float: left;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background: #ccc;
+            border: 1px solid black;
+            border-bottom-color: white;
+        }
+        .con{
+            position: absolute;
+            top: 40px;
+            display: block;
+            width: 400px;
+            height: 160px;
+            border: 1px solid black;
+        }
+        #notice:checked ~ .btn li:first-child{
+            background: white;
+        }
+        #notice:checked ~ .con .second {
+            display: none;
+        }
+        #gallery ~ .body2{
+            display: block;
+        }
+     
+    </style>
+</head>
+<body>
+    <input type="radio" name="board" id="notice" checked>
+    <input type="radio" name="board" id="gallery">
+    <ul class="btn">
+        <li><label for="notice">공지사항</label></li>
+        <li><label for="gallery">갤러리</label></li>
+    </ul>
+        <ul class="con">
+            <li class="first">
+             <table>
+                <tr>
+                    <td>애스크로 서비스 변경 약관을 확인하세요</td>
+                    <td>2019-10-10</td>
+             </table>
+            </li>
+            <li clss="second">갤러리</li>
+        </ul>
+</body>
+</html>

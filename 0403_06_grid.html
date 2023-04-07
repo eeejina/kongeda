@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            width: 1200px;
+            margin: 0 auto;
+            grid-template-areas: "header header header"
+                                 "a a a"
+                                 "b c d"
+                                 "e e e";
+            grid-template-rows: 100px 300px 200px 100px;                                         
+        }
+
+        .item1{
+            display: grid;
+            grid-template-columns: 200px auto;
+            background: #aaa;
+            grid-area: header;       
+        }
+        .item1 .logo{
+            background: #f00;
+        }
+        .item1 .menu{
+            background: #0f0;
+        }
+        .item2{
+            background: #bbb;
+            grid-area: a;
+        }
+        .item3{
+            background: #ccc;
+            grid-area: b;
+        }
+        .item4{
+            background: #ddd;
+            grid-area: c;
+        }
+        .item5{
+            background: #eee;
+            grid-area: d;
+        }
+        .item6{
+            display: grid;
+            grid-template-areas: "logo menu"
+                                 "logo copyright";
+            grid-template-columns: 200px auto;
+            grid-area: e;                     
+        }
+        .item6 .logo{
+            grid-area: logo;
+            background: #f00;
+        }
+        .item6 .menu{
+            grid-area: menu;
+            background: #0f0;
+        }
+        .item6 .copyright{
+            grid-area: copyright;
+            background: blue;
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">
+            <div class="logo"></div>
+            <div class="menu"></div>
+        </div>
+        <div class="grid-item item2">header-background:#bbb</div>
+        <div class="grid-item item3">header-background:#ccc</div>
+        <div class="grid-item item4">header-background:#ddd</div>
+        <div class="grid-item item5">header-background:#eee</div>
+        <div class="grid-item item6">
+            <div class="logo"></div>
+            <div class="menu"></div>
+            <div class="copyright"></div>
+        </div>
+       
+    </div> 
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+       }
+       .aa{
+        width: 1920px;
+        height: 830px;
+        background: #D3232A;
+       }
+       .aaa{
+        margin: 0 auto;
+       }
+       .top{
+        width: 1000px;
+        height: 23px;
+        /* background: #D3232A; */
+        background-image: url(images/index_top.gif);
+        background-repeat: no-repeat;
+       }
+       .pattern{
+        width: 1000px;
+        height: 82px;
+        background-image: url(images/index_pattern.gif), url(images/pattern.gif);
+        background-repeat: no-repeat;
+       }
+       .center{
+        width: 1000px;
+        height: 625px;
+       }
+       .c{
+        width: 486px;
+        height: 100%;
+        background-image: url(images/index_main_01.gif);
+       }
+       .d{
+        position: relative;
+        width: 514px;
+        height: 100%;
+        background-image: url(images/index_main_02.gif);
+        left: 486px;
+        top: -625px
+       }
+       .bottom{
+        width: 1000px;
+        height: 100px;
+        background: white;
+        background-image: url(images/copyright.gif);
+        background-repeat: no-repeat;
+       }
+    </style>
+</head>
+<body>
+    <div class="aa">
+        <aaa>
+            <div class="top"></div>
+            <div class="pattern"></div>
+            <div class="center">
+                <div class="c"></div>
+                <div class="d"></div>
+            </div>
+            <div class="bottom"></div>
+        </aaa>
+    </div>
+</body>
+</html>

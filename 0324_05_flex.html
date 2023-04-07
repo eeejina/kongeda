@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            display: flex;
+            height: 500px;
+            margin: 10px;
+            flex-flow: row wrap;
+            background: #ccc;
+        }
+        .container > div{
+            width: 100px;
+            background: yellowgreen;
+            border: 1px solid #000;
+            margin: 10px;
+        }
+        .flex1{
+            align-items: center;
+            /* align-content: center; */
+        }
+        .flex2{
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flex1">
+        <div><h5>1</h5></div>
+        <div><h1>2</h1></div>
+        <div><h3>3</h3></div>
+    </div>
+    <div class="container flex2">
+        <div><h5>1</h5></div>
+        <div><h1>2</h1></div>
+        <div><h3>3</h3></div>
+    </div>
+</body>
+</html>
